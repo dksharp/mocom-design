@@ -137,6 +137,10 @@ border-radius: 10px;
 display:none;
 }
 
+.row-ai-col{
+  --bs-gutter-x: 75px;
+}
+
 @media (max-width: 768px) {
 .row {
     min-height: auto;
