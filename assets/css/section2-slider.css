@@ -1,0 +1,99 @@
+.s2-slider-container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.s2-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.s2-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.s2-slide img {
+    height: 340px;
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: transform 0.3s; /* Add a smooth transition for scaling */
+}
+
+/* Style for the second image in the slide */
+.s2-slide img:nth-child(2) {
+    width: 183px; /* Make the second image larger */
+    height: 380px;
+    transform: scale(1.1); /* Optional: Slightly enlarge the second image */
+}
+
+.s2-progress-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.s2-progress-item {
+    width: 22%;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .s2-progress-item {
+        width: 100%;
+        display: none;
+        height: 150px;
+    }
+
+    .s2-progress-item.active {
+        display: block;
+    }
+}
+
+.s2-progress-bar {
+    height: 8px;
+    background-color: #d8d8d8;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.s2-progress-bar.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #21db02;
+    animation: progress 4s linear forwards;
+}
+
+@keyframes progress {
+    to {
+        width: 100%;
+    }
+}
+
+.s2-desc-header{
+    float: left;
+  color: #898989;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+  }
+  .s2-desc{
+    color: #898989;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    }
+.s2-desc-header.active{
+  color: #1a1a1a;
+  margin: 20px 0 20px 0;
+}
+    .s2-desc.active{
+        color: #1a1a1a;
+        margin: 20px 0 21px 0;
+    }
