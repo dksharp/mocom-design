@@ -17,12 +17,7 @@
     border-radius: 10px;
     transition: transform 0.3s; /* Add a smooth transition for scaling */
 }
-/* Style for the second image in the slide */
-.s2-slide img:nth-child(2) {
-    width: 183px; /* Make the second image larger */
-    height: 380px;
-    transform: scale(1.1); /* Optional: Slightly enlarge the second image */
-}
+
 .s2-progress-container {
     display: flex;
     justify-content: space-between;
@@ -66,6 +61,7 @@
   }
   
 @media (max-width: 767px) {
+   
     .s2-progress-item {
         width: 100%;
         display: none;
