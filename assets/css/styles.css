@@ -293,7 +293,7 @@ animation: blink 0.8s step-end infinite;
    .s1-text {
       font-size:18px;
       margin-bottom: 22px;
-      margin-top:-10px;
+      margin-top: 85px;
     }
     .container-fluid{
       --bs-gutter-x: 1.5rem;
@@ -375,6 +375,10 @@ font-size: 22px;
   content: "\f106";
 }
 @media (max-width: 768px) {
+  .mask {
+    width: inherit;
+    height: 300px;
+  }
   .heading-1 {
     height:inherit;
     margin: 21px 9px 20px 0;
@@ -728,9 +732,10 @@ font-size: 22px;
       padding-right: 0 !important;
   }
   #typewriter-text{
-    /* width: 325px !important; */
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 35px;
+    height:300px;
   }
   .accordion-button:not(.collapsed) .plus-icon {
     margin: 7px 83px 7 0px;  

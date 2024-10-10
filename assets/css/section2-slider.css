@@ -65,11 +65,16 @@
     .s2-progress-item {
         width: 100%;
         display: none;
-        height: 150px;
+        height: inherit;
     }
 
     .s2-progress-item.active {
         display: block;
+    }
+    .s2-slide img {
+        width: 418px;
+            height: 221px;
+            object-fit: contain;
     }
 }
 
