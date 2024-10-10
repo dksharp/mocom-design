@@ -61,12 +61,14 @@ body {
   color: #ffffff;
 }
 .section-1 .rectangle-2 {
-  width: 121.6px;
+  width: 200px;
   height: 43px;
   margin: 19px 0 0 20px;
   padding: 1px;
   border-radius: 20.5px;
   border: solid 4px #ffffff;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .s1-context {
