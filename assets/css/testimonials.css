@@ -1,11 +1,13 @@
 .s5-testimonial-container {
-    border-radius: 15px;
+  width: 100%;
+  height: 246px;
+  margin: 50px 0px 50px 0;
+  font-size: 36px;
+  font-weight: 500;
+  /* line-height: 1.78; */
+
     color: #fff;
-    margin: 20px auto 40px;
-    max-width: 768px;
-    padding: 50px 80px;
     position: relative;
-    height: 370px;
 }
 
 .fa-quote {
@@ -24,8 +26,11 @@
 }
 
 .s5-testimonial {
-    /* line-height: 28px; */
-    height: 250px;
+    width: 100%;
+  height: 246px;
+  margin: 50px 0px 50px 0;
+  font-size: 36px;
+  font-weight: 500;
     overflow:hidden;
 }
 
@@ -36,9 +41,10 @@
 }
 
 .s5-user .s5-user-image {
-    height: 75px;
+    width: 100px;
+  height: 100px;
+  margin: 20px 18px 20px 333px;
     object-fit: cover;
-    width: 75px;
 }
 
 .s5-user .s5-user-details {
@@ -59,12 +65,14 @@
 }
 
 .s5-progress-container {
-    width: 60%;
-    height: 8px;
+    width: 630px;
+    height: 6px;
+    margin: 178px 0 0 333px;
+    padding: 0 465.7px 0 0;
     background-color: #d8d8d8;
-    margin: 0 auto;
+
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     overflow: hidden;
 }
 

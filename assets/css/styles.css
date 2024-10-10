@@ -8,9 +8,8 @@ body {
   overflow-x: hidden;
 }
 .container-fluid{
-  --bs-gutter-x: 1.5rem;
-  padding-right: calc(var(--bs-gutter-x)* 2) !important;
-  padding-left: calc(var(--bs-gutter-x)* 2) !important;
+  padding-right: 100px !important;
+  padding-left: 100px !important;
 }
 * {
   box-sizing: border-box;
@@ -25,7 +24,7 @@ body {
 
 .line {
   height: 1px;
-  margin: 20px 22px 20px 0;
+  margin: 20px 0 20px 0;
   border: solid 4px #dcdcdc;
 }
 
@@ -411,70 +410,91 @@ font-size: 22px;
   
 }
 .ai-text-3 {
-  margin: 20px 0 45px 0px;
+  margin: 20px 0 0 0;
   font-size: 24px;
   font-weight: 600;
 }
 
-.ai-context {
-  padding: 30px 0;
-  text-align: left; 
-  max-width: 400px; 
+.ai-heading-text {
+  height: 29px;
+  margin: 80px 75px 20px 0;
+  font-size: 24px;
+  font-weight: bold;
 }
-
-.ai-heading-text,
-.ai-heading-text-2,
-.ai-details {
-margin: 10px 10px 20px 0px;
-font-size: 18px;
-font-weight: 500;
-text-align: left;
-}
-
-.ai-heading-text,
 .ai-heading-text-2 {
-font-size: 22px;
-font-weight: bold;
+  width: 341px;
+  height: 29px;
+  margin: 27px 92px 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.ai-details {
+  width: 423px;
+  height: 72px;
+  margin: 20px 10px 27px 0;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .ai-window {
+  width: 450px;
+  height: 450px;
+  margin: 50px 51px 0 0;
+  padding: 70px 69px 69px 70px;
   display: flex;                
   justify-content: center;      
   align-items: center;          
-  height: 494px;                
   background-image: linear-gradient(to bottom, #1a1a1a, #000a6b 99%);
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
-  padding: 75px 170px 75px;
   border-radius: 20px;          
 }
 
 .overlay-image {
-  height: 280px;
+  width: 311px;
+  height: 311px;
   object-fit: contain;
 }
-@media (min-width: 769px) and (max-width: 1200px) {
-  .ai-window {
-    padding: 35px 50px 50px;
-  }
-  .overlay-image {
-    height: 180px;
-    object-fit: contain;
-  }
-}
-
 
 @media (max-width: 768px ) {
   .ai-window {
-    padding: 55px 75px 70px;
+    width: 375px;  
+    height: 375px;
+    padding: 50px 20px 43px; 
+    padding: 67px 66px 66px 67px;
   }
   .overlay-image {
-    height: 220px;
+    width: 300px;
+  height: 300px;
     object-fit: contain;
   }
   .ai-window, .ai-context {
       margin: 0 auto;
+    }
+    .ai-text-3{
+        height: 87px;
+        margin: 20px 17px 50px 0px;
+    }
+    .ai-heading-text{
+        height: 76px;
+        margin: 0 0 20px 0px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .ai-heading-text-2{
+      width: inherit;
+      height: inherit;
+      margin: 0px 0px 20px 0px;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .ai-details{
+      width: inherit;
+        height: inherit;
+        margin: 20px 0px 50px 0;
+        font-size: 24px;
+        font-weight: 500;
     }
 }
 
@@ -519,18 +539,52 @@ font-size: 22px;
   font-size: 18px;
   font-weight:normal;
 }
+@media (max-width: 768px) {
+  .feature-heading-top{
+    margin: 25px 0 20px 0;
+    font-size: 40px;
+    }
+    .feature-heading{
+    margin: 44px 0 20px 0;
+    font-size: 40px;
+    }
+    .feature-detail{
+      font-weight: 500;
+    margin: 0 0 50px ;
+    font-size: 22px;
+    }
+    img {
+      width: 65px;
+      height: 65px;
+    }
+    
+    .spec-img{
+    
+        width: 86px;
+        height: 86px;
+        margin: 0 357px 20px 0;
+        padding: 10px 12px 11px 9px;
+        border-radius: 10px;
+        background-color: #21db02;
+    
+    border: solid 1px var(--warm-grey);
+    }
+}
 /* section 4  ends */
 
 /* section 5 start */
 
 .section-5 {
   overflow: hidden;
-  height: 500px;
+  height: 494px;
+  padding: 10px 0 22px 61px;
   background-image: linear-gradient(to bottom, #1a1a1a, #000a6b 99%);
   font-weight: 600;
   font-size: 22px;
   color: #ffffff;
 }
+
+
 
 /* section 5 ends */
 

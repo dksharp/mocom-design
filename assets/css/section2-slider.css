@@ -2,33 +2,27 @@
     width: 80%;
     margin: auto;
 }
-
-
 .s2-slider {
     display: flex;
     overflow: hidden;
 }
-
 .s2-slide {
     min-width: 100%;
     display: flex;
     justify-content: space-around;
 }
-
 .s2-slide img {
     height: 340px;
     margin: 0 5px;
     border-radius: 10px;
     transition: transform 0.3s; /* Add a smooth transition for scaling */
 }
-
 /* Style for the second image in the slide */
 .s2-slide img:nth-child(2) {
     width: 183px; /* Make the second image larger */
     height: 380px;
     transform: scale(1.1); /* Optional: Slightly enlarge the second image */
 }
-
 .s2-progress-container {
     display: flex;
     justify-content: space-between;
@@ -39,7 +33,38 @@
     width: 22%;
     display: block;
 }
-
+/* Arrows */
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    user-select: none;
+  }
+  
+  .arrow-left {
+    left: 20px;
+  }
+  
+  .arrow-right {
+    right: 20px;
+  }
+  
+  .s2-slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+  
+  @media (max-width: 767px) {
+    .arrow-left, .arrow-right {
+      display: none;
+    }
+  }
+  
 @media (max-width: 767px) {
     .s2-progress-item {
         width: 100%;
@@ -75,7 +100,6 @@
         width: 100%;
     }
 }
-
 .s2-desc-header{
     float: left;
   color: #898989;
