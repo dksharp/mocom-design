@@ -58,8 +58,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="s1-slider position-relative">
+            <div class="col-md-6 col-sm-10">
+                <div class="s1-slider">
                     <div class="s1-slide active">
                         <img src="./assets/images/section_1/1.jpg" class="s1-img-fluid" alt="Slide 1">
                     </div>
@@ -277,24 +277,26 @@
     <div class="section-5">
         <div class="container-fluid testimonials">
             <div class="s5-testimonial-container">
-                <div class="fa fa-quote-right fa-quote"></div>
-                <div class="fa fa-quote-left fa-quote"></div>
                 <span class="s5-testimonial">
                     I've worked with literally hundreds of HTML/CSS developers and I have to say the top spot goes to
                     this guy. This
                     guy is an amazing developer. He stresses on good, clean code and pays heed to the details. He goes
                     over and beyond and transforms ART into PIXELS - without a glitch, every time.
                 </span>
-                <div class="s5-user">
-                    <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="user" class="s5-user-image" />
-                    <div class="s5-user-details">
-                        <h4 class="s5-username">Miyah Myles</h4>
-                        <p class="s5-role">Marketing</p>
+            </div>
+            <div class="row">
+                <div class="col-md-8 ms-auto col-sm-12">
+                    <div class="s5-user">
+                        <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="user" class="s5-user-image" />
+                        <div class="s5-user-details">
+                            <h4 class="s5-username">Miyah Myles</h4>
+                            <p class="s5-role">Marketing</p>
+                        </div>
+                    </div>
+                    <div class="s5-progress-container">
+                        <div class="s5-progress-bar"></div>
                     </div>
                 </div>
-            </div>
-            <div class="s5-progress-container">
-                <div class="s5-progress-bar"></div>
             </div>
         </div>
     </div>
@@ -475,30 +477,27 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const textElement = document.getElementById("typewriter-text");
-        const textLines = [{
+        const textLines = [
+            {
                 text: "Take your wholesale business online in 15 mins",
-                width: "380px",
-                mobileWidth: "300px"
+                width: "auto",
             },
             {
                 text: "Serve wholesale customers nationwide",
-                width: "350px",
-                mobileWidth: "250px"
+                width: "auto",
             },
             {
                 text: "Save time and money with managed logistics",
-                width: "350px",
-                mobileWidth: "250px"
+                width: "auto",
             },
             {
                 text: "Boost customer repeat rate",
-                width: "220px",
-                mobileWidth: "150px"
+                width: "auto",
             },
             {
                 text: "Be cashflow positive",
                 width: "100px",
-                mobileWidth: "80px"
+                mobileWidth: "auto"
             }
         ];
         let lineIndex = 0;

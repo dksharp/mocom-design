@@ -35,7 +35,7 @@ body {
 }
 
 .section-1{
-  height: 765px;
+  height: 715px;
   background-image: linear-gradient(to bottom, #000, #000a6b);
   font-weight: 600;
   font-size: 22px;
@@ -175,6 +175,11 @@ font-size: 20px;
   font-size: 38px;
   height: 200px;
 }
+#typewriter-text{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 35px !important;
+}
 .s1-context {
   padding: 20px 0;
 }
@@ -187,7 +192,6 @@ font-size: 20px;
   align-items: center;
   position: relative;
   width: 100%;
-  /* left:22.75%; */
 }
 
 .s1-slide {
@@ -251,7 +255,7 @@ display: inline-block;
 #typewriter-text{
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 45px;
 
 }
 
@@ -291,9 +295,10 @@ animation: blink 0.8s step-end infinite;
       margin-top:0;
     }
    .s1-text {
+    width: auto;
       font-size:18px;
       margin-bottom: 22px;
-      margin-top: 85px;
+      margin-top: 70px;
     }
     .container-fluid{
       --bs-gutter-x: 1.5rem;
@@ -606,19 +611,7 @@ font-size: 22px;
 /* section 4  ends */
 
 /* section 5 start */
-
-.section-5 {
-  overflow: hidden;
-  height: 518px;
-  padding: 10px 0 22px 0;
-  background-image: linear-gradient(to bottom, #1a1a1a, #000a6b 99%);
-  font-weight: 600;
-  font-size: 22px;
-  color: #ffffff;
-}
-
-
-
+/* testimonials section */
 /* section 5 ends */
 
 
@@ -731,12 +724,7 @@ font-size: 22px;
       padding-left: 0 !important;
       padding-right: 0 !important;
   }
-  #typewriter-text{
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 35px;
-    height:300px;
-  }
+  
   .accordion-button:not(.collapsed) .plus-icon {
     margin: 7px 83px 7 0px;  
 }
