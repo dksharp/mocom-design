@@ -191,7 +191,8 @@ font-size: 20px;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 80%;
+  left: 20%;
 }
 
 .s1-slide {
@@ -227,12 +228,12 @@ font-size: 20px;
       margin-right: 10px;
   }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+/* @media (min-width: 769px) and (max-width: 1200px) {
   .s1-slider {
     position: relative;
     width: 35%;
 }
-}
+} */
 
 .navbar {
   padding: 10px 20px;
