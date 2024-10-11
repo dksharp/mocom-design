@@ -96,6 +96,9 @@
                             <img src="./assets/images/section_2/four.png" class="s2-slider-image" alt="Image 3">
                         </div>
                     </div>
+                    <!-- Left and Right Controls -->
+                    <button class="arrow-left" onclick="previousSlide()">&#10094;</button>
+                    <button class="arrow-right" onclick="nextSlide()">&#10095;</button>
                 </div>
             </div>
             <!-- Progress Bars and Content -->
@@ -580,11 +583,47 @@
     }
 
     function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-    setInterval(nextSlide, 5000); // Slide changes every 4 seconds
+    currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
+}
+
+function previousSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 4000); 
+showSlide(currentSlide);
+// Swipe functionality
+let startX; // Starting X position of the touch
+let endX; // Ending X position of the touch
+const swipeThreshold = 50; // Minimum distance to consider it a swipe
+
+// Function to handle touch start
+function handleTouchStart(e) {
+    startX = e.touches[0].clientX; 
+}
+
+// Function to handle touch end
+function handleTouchEnd(e) {
+    endX = e.changedTouches[0].clientX; 
+    handleSwipe(); 
+}
+
+function handleSwipe() {
+    const distance = endX - startX;
+
+    if (distance > swipeThreshold) {
+        previousSlide();
+    } else if (distance < -swipeThreshold) {
+        nextSlide();
+    }
+}
+
+// Add event listeners for touch events
+document.querySelector('.s2-slider-container').addEventListener('touchstart', handleTouchStart);
+document.querySelector('.s2-slider-container').addEventListener('touchend', handleTouchEnd);
+
 </script>
 <!-- Section-2 script begins-->
 
