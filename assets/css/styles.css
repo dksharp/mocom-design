@@ -756,7 +756,7 @@ font-size: 22px;
   font-weight: 600;
   height: 29px;
 }
-.footer-links{
+.footer-links, .footer-links-2{
   display: inline-block;
   margin-bottom: 20px;
   font-size: 20px;
@@ -781,13 +781,18 @@ font-size: 22px;
   }
   .footer-heading{
     display: inline-block;
-    margin: 0 73px 25px 0;
+    margin: 50px 73px 20px 0;
     height: inherit;
   }
   .footer-links{
     display: inline-block;
-    margin: 25px 3px 20px 0;
+    margin: 0px 3px 20px 0;
     height: inherit;
+  }
+  .footer-links-2{
+    height: inherit;
+    display: inline-block;
+    margin: 0px 3px 0px 0;
   }
   .copy-rights {
       width: inherit;
