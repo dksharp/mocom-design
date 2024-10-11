@@ -68,7 +68,7 @@
             <div class="col-md-6 col-sm-10">
                 <div class="s1-slider">
                     <div class="s1-slide active">
-                        <img src="./assets/images/section_1/1.jpg" class="s1-img-fluid" alt="Slide 1">
+                        <img src="./assets/images/section_1/1.jpg" class="s1-img-fluid " alt="Slide 1">
                     </div>
                     <div class="s1-slide">
                         <img src="./assets/images/section_1/2.jpg" class="s1-img-fluid" alt="Slide 2">
@@ -110,26 +110,26 @@
             </div>
             <!-- Progress Bars and Content -->
             <div class="s2-progress-container">
-                <div class="s2-progress-item">
+                <div class="s2-progress-item" onclick="showSlide(0)">
                     <div class="s2-progress-bar"></div>
                     <span class="s2-desc-header">Your wholesale shop now online! </span><br><span class="s2-desc">Cater
                         every customer with 24*7 open and
                         easily sharable digital stores that are b2b checkout ready with custom pricing.</span>
                 </div>
-                <div class="s2-progress-item">
+                <div class="s2-progress-item" onclick="showSlide(1)">
                     <div class="s2-progress-bar"></div>
                     <span class="s2-desc-header">Fulfil customers anywhere in India </span><br><span
                         class="s2-desc">Ship anywhere in India easier, faster,
                         and cheaper with the best of Indian logistics companies at one place without the need for any
                         integrations. </span>
                 </div>
-                <div class="s2-progress-item">
+                <div class="s2-progress-item" onclick="showSlide(2)">
                     <div class="s2-progress-bar"></div>
                     <span class="s2-desc-header">Streamline and secure payments </span><br><span class="s2-desc">Recieve
                         payments using multiple payment
                         options including COD, UPI, Internet banking, Cards and even Paylater.</span>
                 </div>
-                <div class="s2-progress-item">
+                <div class="s2-progress-item" onclick="showSlide(3)">
                     <div class="s2-progress-bar"></div>
                     <span class="s2-desc-header">Spend less time running, more growing </span><br><span
                         class="s2-desc">Easily retain customers with
@@ -598,6 +598,7 @@
         progressItems.forEach((item, i) => {
             item.classList.toggle('active', i === index);
         });
+        currentSlide = index;
     }
 
     function nextSlide() {
@@ -612,14 +613,12 @@
     setInterval(nextSlide, 4000);
     showSlide(currentSlide);
     // Swipe functionality
-    let startX; // Starting X position of the touch
-    let endX; // Ending X position of the touch
-    const swipeThreshold = 50; // Minimum distance to consider it a swipe
-    // Function to handle touch start
+    let startX; 
+    let endX; 
+    const swipeThreshold = 50; 
     function handleTouchStart(e) {
         startX = e.touches[0].clientX;
     }
-    // Function to handle touch end
     function handleTouchEnd(e) {
         endX = e.changedTouches[0].clientX;
         handleSwipe();
@@ -636,6 +635,8 @@
     // Add event listeners for touch events
     document.querySelector('.s2-slider-container').addEventListener('touchstart', handleTouchStart);
     document.querySelector('.s2-slider-container').addEventListener('touchend', handleTouchEnd);
+    document.querySelector('.s2-progress-container').addEventListener('touchstart', handleTouchStart);
+    document.querySelector('.s2-progress-container').addEventListener('touchend', handleTouchEnd);
 </script>
 <!-- Section-2 script begins-->
 

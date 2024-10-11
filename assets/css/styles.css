@@ -98,7 +98,6 @@ font-weight: bold;
 height: 60px;
 font-size: 25px;
 margin: 25px 0 62px;
-/* font-weight: 600; */
 }
 
 .s1-button{
@@ -117,13 +116,12 @@ width: 50%;
 }
 
 .s1-slide {
-position: absolute;
-top: 0;
-left:80%;
-width: 100%;
-opacity: 0;
-transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-  transform: scale(0.9);
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in;
 }
 
 .s1-slide.active {
@@ -561,6 +559,17 @@ font-size: 22px;
         font-size: 24px;
         font-weight: 500;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .overlay-image {
+      width: 287px;
+      height: 287px;
+      object-fit: contain;
+  }
+  .ai-window {
+      width:100%;
+  }
 }
 
 /* section 3  ends  */ 
