@@ -34,6 +34,16 @@ body {
   border: solid 4px #dcdcdc;
 }
 
+.header{
+  background-color: #000;
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+  --bs-gutter-x: 1.5rem;
+  padding-right: calc(var(--bs-gutter-x)* 2) !important;
+  padding-left: calc(var(--bs-gutter-x)* 2) !important;
+}
+
 .section-1{
   height: 715px;
   background-image: linear-gradient(to bottom, #000, #000a6b);
@@ -44,7 +54,7 @@ body {
   padding-right: calc(var(--bs-gutter-x)* 2) !important;
   padding-left: calc(var(--bs-gutter-x)* 2) !important;
 }
-.section-1 .logo {
+.logo {
   margin-top:9px;
   width: 96px;
   height: 29px;
@@ -53,19 +63,19 @@ body {
   color: #ffffff;
   overflow: hidden;
 }
-.section-1 .open-new-store {
+.open-new-store {
   height: 26px;
   color: #ffffff;
 }
-.section-1 .login {
+.login {
   height: 26px;
   color: #ffffff;
 }
-.section-1 .get-in-touch {
+.get-in-touch {
   height: 26px;
   color: #ffffff;
 }
-.section-1 .rectangle-2 {
+.rectangle-2 {
   width: 121.6px;
   height: 43px;
   margin: 19px 0 0 20px;
@@ -189,12 +199,17 @@ display:none;
   display:none;
 }
 
+.header{
+  height:65px;
+  padding-right: calc(var(--bs-gutter-x)* 0.8) !important;
+  padding-left: calc(var(--bs-gutter-x)* 0.8) !important;
+}
 .section-1{
   height:1100px;
   padding-right: calc(var(--bs-gutter-x)* 0.8) !important;
   padding-left: calc(var(--bs-gutter-x)* 0.8) !important;
 }
-.section-1 .rectangle-2 {
+ .rectangle-2 {
   margin-left: 35px;
 }
 .s1-button{
@@ -276,16 +291,11 @@ font-size: 20px;
       margin-right: 10px;
   }
 }
-/* @media (min-width: 769px) and (max-width: 1200px) {
-  .s1-slider {
-    position: relative;
-    width: 35%;
-}
-} */
+
 
 .navbar {
-  padding: 10px 20px;
-  margin-bottom: 40px;
+  background-color: #000;
+  padding: 10px 20px 50px 20px;
 }
 
 .navbar-brand {
