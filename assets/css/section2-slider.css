@@ -23,6 +23,9 @@
     border-radius: 10px;
     transition: transform 0.3s; /* Add a smooth transition for scaling */
 }
+.s2-slide:nth-child(2) img {
+    width: 90%; 
+}
 
 .s2-progress-container {
     display: flex;
