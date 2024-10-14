@@ -2,10 +2,14 @@
     width: 80%;
     margin: auto;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 .s2-slider {
     display: flex;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 .s2-slide {
     min-width: 100%;
@@ -73,9 +77,11 @@
     .s2-slide img {
         left: 0;
         width: auto;
-            height: 221px;
-            object-fit: contain;
-            margin-left: -30px;
+        height: 221px;
+        object-fit: contain;
+        margin-left: -30px;
+        justify-content: center;
+        align-items: center;
     }
     .s2-slide:nth-child(2) img {
         width: 380px; 
@@ -104,14 +110,18 @@
     .s2-slide img {
         left: 0;
         width: 418px;
-            height: 221px;
-            object-fit: contain;
-            margin-left: -10px;
+        height: 221px;
+        object-fit: contain;
+        margin-left: -20px;
+        justify-content: center;
+        align-items: center;
     }
     .s2-slide:nth-child(2) img {
         width: 380px; 
         height: auto; 
         margin-left: 0;
+        justify-content: center;
+        align-items: center;
     }
 }
 
