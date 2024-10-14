@@ -17,7 +17,8 @@
     justify-content: space-around;
 }
 .s2-slide img {
-    height: 340px;
+    width: 80%;
+    /* height: 340px; */
     margin: 0 5px;
     border-radius: 10px;
     transition: transform 0.3s; /* Add a smooth transition for scaling */
