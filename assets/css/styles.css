@@ -78,7 +78,7 @@ body {
 .rectangle-2 {
   width: 121.6px;
   height: 43px;
-  margin: 19px 0 0 20px;
+  margin: 3px 0 0 20px;
   padding: 1px;
   border-radius: 20.5px;
   border: solid 4px #ffffff;
@@ -223,15 +223,18 @@ font-size: 20px;
   padding: 10px !important;
 }
 .navbar-toggler-icon {
-  margin-top: 20px;
+  margin-top: 10px;
 }
  .open-new-store {
   height: inherit;
-  color: #1a1a1a;
+  color: #fff;
+  margin-top: -8px !important;
+}
 }
 .login {
   height: inherit;
-  color: #1a1a1a;
+  color: #fff;
+  margin-top: 0px !important;
 }
 .typewriter-container {
   font-size: 38px;
